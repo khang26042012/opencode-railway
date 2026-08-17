@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "xkiro/qwen/qwen3.8-max",
+  "provider": {
+    "xkiro": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "XKIRO",
+      "options": {
+        "baseURL": "https://api.xkiro.com/v1",
+        "apiKey": "{env:XTROUTER_API_KEY}"
+      },
+      "models": {
+        "qwen/qwen3.8-max": {
+          "name": "Qwen3.8 Max",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        }
+      }
+    }
+  }
+}
